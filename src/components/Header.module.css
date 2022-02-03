@@ -1,0 +1,31 @@
+.header {
+  background-color: hsl(209, 23%, 22%);
+  width: 100%;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.06);
+}
+
+.light {
+  background-color: #fff;
+  color: hsl(200, 15%, 8%);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content p {
+  font-weight: 600;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

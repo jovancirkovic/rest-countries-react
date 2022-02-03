@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import Country from "./components/Country";
+import Header from "./components/Header";
+import Input from "./components/Input";
 
 function App() {
+  const [isClicked, setIsClicked] = useState(false);
+  const [country, setCountry] = useState("");
+
+  const onClickHandler = (data) => {
+    setIsClicked(data);
+  };
+
+  const onNameHandler = (data) => {
+    setCountry(data);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header onClickHandler={onClickHandler} />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Input isClicked={isClicked} onNameHandler={onNameHandler} />
+          }
+        />
+        <Route
+          path="/country/:name"
+          element={<Country country={country} isClicked={isClicked} />}
+        />
+      </Routes>
+    </>
   );
 }
 

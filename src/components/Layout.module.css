@@ -1,0 +1,10 @@
+.layout {
+  width: 80%;
+  margin: auto;
+}
+
+@media screen and (max-width: 1400px) {
+  .layout {
+    width: 95%;
+  }
+}

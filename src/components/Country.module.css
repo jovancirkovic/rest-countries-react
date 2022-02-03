@@ -1,0 +1,151 @@
+/* .container {
+  width: 80%;
+  margin: auto;
+} */
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.8rem;
+}
+
+.back,
+.home {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.light_back {
+  color: #000;
+}
+
+.back:hover,
+.home:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.country_info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  line-height: 1rem;
+}
+
+.flag {
+  width: 500px;
+}
+
+img {
+  width: 100%;
+}
+
+.info_container {
+  margin-left: 2rem;
+  color: #fff;
+}
+
+.light_info {
+  margin-left: 2rem;
+  color: #000;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column2 {
+  margin-left: 3.6rem;
+}
+
+.borders_container {
+  display: flex;
+  margin-top: 1rem;
+}
+
+h4 {
+  margin: 0 2rem 0 0;
+}
+
+.borders {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.border {
+  width: 70px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0.5rem 1.4rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.light_border {
+  color: #000;
+}
+
+.border:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media screen and (max-width: 625px) {
+  .info_container {
+    margin-left: 0;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .column2 {
+    margin-left: 0;
+    margin-top: -1rem;
+  }
+
+  .borders {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 625px) {
+  .country_info {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .borders_container {
+    flex-direction: column;
+  }
+
+  .borders_container > h4 {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .border {
+    width: 50px;
+  }
+}
