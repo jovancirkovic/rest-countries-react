@@ -1,11 +1,10 @@
-# Frontend Mentor - Profile Card Component
+# Frontend Mentor - Rest Countries
 
-![Header/intro section for the Huddle landing page with curved sections](./public/desktop-preview.png)
+![Header/intro section for the Huddle landing page with curved sections](./public/desktop-preview.jpg)
 
 ### Links
 
 - Live Site URL: [link](https://rest-countries-b2089.netlify.app/)
-
 
 # Getting Started with Create React App
 
